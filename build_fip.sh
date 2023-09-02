@@ -3,6 +3,8 @@
 mkdir -p fip
 mkdir -p fip_tmp
 
+rm fip/* fip_tmp/* -rf
+
 cp ../tf-a/deploy/fwconfig/stm32mp135d-atk-fw-config-optee.dtb fip_tmp/
 cp ../optee/deploy/tee-* fip_tmp/
 cp ../uboot/deploy/u-boot-* fip_tmp/
