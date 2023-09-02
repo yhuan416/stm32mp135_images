@@ -34,4 +34,24 @@ git clone git@github.com:yhuan416/stm32mp135_images.git images
 
 生成的fip文件放在 fip 目录下
 
+# bootfs
 
+``` sh
+
+mkdir -p bootfs
+
+# 挂载bootfs
+sudo mount -o loop bootfs.ext4 bootfs
+
+# 更新bootfs内的文件
+cd bootfs
+sudo rm stm32mp135d-atk* uImage 5.15.24/ -rf
+sudo cp ../../linux/tmp/* ./
+sudo tar -axvf modules.tar.bz2
+sudo rm modules.tar.bz2
+
+# 卸载bootfs
+cd ..
+sudo umount bootfs 
+
+```
