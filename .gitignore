@@ -1,2 +1,4 @@
 fip/
-out/
+fip_tmp/
+bootfs/
+arm-trusted-firmware/

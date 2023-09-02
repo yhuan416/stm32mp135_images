@@ -8,16 +8,30 @@ stm32mp135 images
 git clone git@github.com:yhuan416/stm32mp135_images.git images
 ```
 
-## 生成固件
+# TF_A
+
+## 生成tf_a
 
 ``` sh
-./build.sh
+./build_tfa.sh
 ```
 
-## 清空
+生成的tf_a文件放在 arm-trusted-firmware 目录下
+
+# FIP
+
+## 生成fip
 
 ``` sh
-./clean.sh
+./build_fip.sh
 ```
 
-生成的文件放在 out 目录下
+## 清空fip
+
+``` sh
+./clean_fip.sh
+```
+
+生成的fip文件放在 fip 目录下
+
+
