@@ -5,3 +5,7 @@ rootfs.ext4
 bootfs/stm32mp135d-atk*
 bootfs/uImage
 bootfs/5.15.24/
+
+arm-trusted-firmware/
+fip/
+
